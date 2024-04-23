@@ -13,5 +13,15 @@ console.log(producto3); // Este es un objeto, no un string
 console.log(producto4); // Para usar comillas dobles dentro de un string, se usa el backslash
 console.log(producto5.length); // Para saber la longitud de un string, se usa la propiedad length
 console.log(tweet.length); // Para saber la longitud de un string, se usa la propiedad length
+const email = 'correo@correo.com';
+
+// IndexOf (Para saber la posicion de una palabra en un string)
+console.log(tweet.indexOf('JavaScript')); // Para saber la posicion de una palabra en un string, se usa indexOf
+console.log(tweet.indexOf('PHP')); // Si no encuentra la palabra, regresa -1
+console.log(email.indexOf('@')); // Para saber la posicion de una palabra en un string, se usa indexOf
+
+// Includes (Para saber si una palabra esta en un string)
+console.log(tweet.includes('JavaScript')); // Para saber si una palabra esta en un string, se usa includes
+console.log(tweet.includes('PHP')); // Si no encuentra la palabra, regresa false
 
 
