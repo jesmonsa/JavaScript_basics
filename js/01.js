@@ -18,3 +18,14 @@ var nombreProducto = 'Monitor HD'; // camelcase
 var NombreProducto = 'Monitor HD'; // pascal case
 var nombreproducto = 'Monitor HD'; // lowercase
 
+console.log(producto); // Mostrar en consola
+console.log(disponible); // Mostrar en consola
+console.log(producto1); // Mostrar en consola
+console.log(disponible1); // Mostrar en consola
+console.log(categoria); // Mostrar en consola
+console.log(nombre_producto); // Mostrar en consola
+console.log(nombreProducto); // Mostrar en consola
+console.log(NombreProducto); // Mostrar en consola
+console.log(nombreproducto); // Mostrar en consola
+
+
