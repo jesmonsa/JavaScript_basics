@@ -32,3 +32,20 @@ console.log(resultado);
 
 resultado = (100 + 200 + 300) * 1.16; // 696 con IVA
 console.log(resultado);
+
+resultado = ( 600 + 600 ) * 1.05; // 1260 comisión del 5% por pagar con tarjeta o utilizar el servicio 
+console.log(resultado);
+
+// Incrementos y decrementos
+
+let puntaje = 10;
+console.log(puntaje); // 10
+
+puntaje++; // 11
+console.log(puntaje);
+
+puntaje--; // 10
+console.log(puntaje);
+
+puntaje += 5; // 15
+console.log(puntaje);
