@@ -11,6 +11,10 @@ console.log(nombre);
 // Destructuring
 const { nombreProducto } = producto;
 console.log(nombreProducto);
+const { precio } = producto;
+console.log(precio);
+const { disponible } = producto;
+console.log(disponible);
 
 // Destructuring en arreglos
 const numeros = [10, 20, 30, 40, 50];
