@@ -1,3 +1,5 @@
+// Array Methods 
+
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto'];
 
 const carrito = [
@@ -24,4 +26,42 @@ meses.forEach(function(mes) {
     }
 });
 
+// Includes
+const resultado = meses.includes('Marzo');
+console.log(resultado);
 
+const resultado2 = meses.includes('Noviembre');
+console.log(resultado2);
+
+
+// Some ideal para arreglos de objetos
+const existe = carrito.some(function(producto) {
+    return producto.nombre === 'Celular';
+});
+
+console.log(existe);
+
+const existe2 = carrito.some(function(producto) {
+    return producto.nombre === 'Funda Celular';
+});
+
+console.log(existe2);
+
+// Arrow Function
+const existe3 = carrito.some(producto => producto.nombre === 'Celular');
+console.log(existe3);
+
+const existe4 = carrito.some(producto => producto.nombre === 'Funda Celular');
+console.log(existe4);
+
+
+// Reduce
+const resultado3 = carrito.reduce(function(total, producto) {
+    return total + producto.precio;
+}, 0);
+
+console.log(resultado3);
+
+// Reduce con Arrow Function
+const resultado4 = carrito.reduce((total, producto) => total + producto.precio, 0);
+console.log(resultado4);
