@@ -83,3 +83,15 @@ const resultado7 = carrito.filter(function(producto) {
 
 console.log(resultado7);
 
+const resultado8 = carrito.filter(function(producto) {
+    return producto.nombre !== 'Celular';
+});
+
+console.log(resultado8);
+
+// Find
+const resultado9 = carrito.find(function(producto) {
+    return producto.nombre === 'Celular';
+});
+
+console.log(resultado9);
