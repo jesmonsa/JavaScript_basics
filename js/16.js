@@ -65,3 +65,21 @@ console.log(resultado3);
 // Reduce con Arrow Function
 const resultado4 = carrito.reduce((total, producto) => total + producto.precio, 0);
 console.log(resultado4);
+
+// Filter
+const resultado5 = carrito.filter(function(producto) {
+    return producto.precio > 400;
+});
+
+console.log(resultado5);
+
+// Filter con Arrow Function
+const resultado6 = carrito.filter(producto => producto.precio > 400);
+console.log(resultado6);
+
+const resultado7 = carrito.filter(function(producto) {
+    return producto.nombre === 'Celular';
+});
+
+console.log(resultado7);
+
