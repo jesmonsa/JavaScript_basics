@@ -10,8 +10,8 @@ const producto = {
         console.log(`El producto: ${this.nombre} tiene un precio de: ${this.precio}`);
     }
 }
-
 producto.mostrarInfo();
+
 
 // Object Constructor
 function Producto(nombre, precio) {
@@ -19,4 +19,7 @@ function Producto(nombre, precio) {
     this.precio = precio;
     this.disponible = true;
 }
+
+const producto2 = new Producto('Monitor 24 Pulgadas', 500);
+console.log(producto2);
 
