@@ -1,0 +1,1 @@
+// Object constructor and obejcet literal
