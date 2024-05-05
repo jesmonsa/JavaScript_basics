@@ -9,6 +9,10 @@ class Producto {
     formatearProducto() {
         return `El producto ${this.nombre} tiene un precio de: ${this.precio}`;
     }
+
+    precioProducto() {
+        console.log(this.precio);
+    }
 }
 
 const producto2 = new Producto('Monitor 24 Pulgadas', 500);
@@ -23,9 +27,10 @@ class Libro extends Producto {
     formatearProducto() {
         return `${super.formatearProducto()} y su ISBN es ${this.isbn}`;
     }
+
+    
 }
 
 const libro = new Libro('JavaScript la Revolución', 120, '123456');
 console.log(libro.formatearProducto());
-console.log(producto2);
-console.log(producto3);
+console.log(producto2.formatearProducto());
