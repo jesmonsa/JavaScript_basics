@@ -12,6 +12,15 @@ const producto = {
 }
 producto.mostrarInfo();
 
+function Cliente(nombre, apellido) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+}
+
+Cliente.prototype.formatearCliente = function() {
+    return `El Cliente ${this.nombre} ${this.apellido}`;
+}
+
 
 // Object Constructor
 function Producto(nombre, precio) {
@@ -20,24 +29,23 @@ function Producto(nombre, precio) {
     this.disponible = true;
 }
 
-function Cliente(nombre, apellido) {
-    this.nombre = nombre;
-    this.apellido = apellido;
+// Prototype
+Producto.prototype.formatearProducto = function() {
+    return `El producto ${this.nombre} tiene un precio de: ${this.precio}`;
 }
 
 const producto2 = new Producto('Monitor 24 Pulgadas', 500);
 const producto3 = new Producto('Television 50 Pulgadas', 700);
-
 const cliente = new Cliente('Juan', 'Herrera');
+const cliente2 = new Cliente('Karen', 'Herrera');
 
-console.log(cliente);
+console.log(cliente.formatearCliente());
+console.log(cliente2.formatearCliente());
+console.log(producto2.formatearProducto());
+console.log(producto3.formatearProducto());
 
-function formatearProducto(producto) {
-    return `El producto ${producto.nombre} tiene un precio de: ${producto.precio}`;
-}
 
-console.log(producto2);
-console.log(producto3);
 
-console.log(formatearProducto(producto2));
+
+
 
