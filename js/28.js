@@ -36,7 +36,6 @@ function formatearProducto(producto) {
     return `El producto ${producto.nombre} tiene un precio de: ${producto.precio}`;
 }
 
-
 console.log(producto2);
 console.log(producto3);
 
