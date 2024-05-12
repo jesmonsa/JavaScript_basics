@@ -7,7 +7,11 @@ const usuarioAutenticado = new Promise((resolve, reject) => {
     }
 });
 
-console.log(usuarioAutenticado);
+usuarioAutenticado
+    .then(resultado => console.log(resultado))
+    .catch(error => console.log(error));
+
+
 
 // En los promises existen 3 valores posibles: 
 // fulfilled - El promise se cumplió
