@@ -1,0 +1,28 @@
+{
+    "empleados" : [
+        {
+            "id" : 1,
+            "nombre" : "Juan",
+            "apellido" : "Perez",
+            "puesto" : "Gerente,",
+            "edad" : 30,
+            "salario" : 1000
+        },
+        {
+            "id" : 2,
+            "nombre" : "Maria",
+            "apellido" : "Gomez",
+            "puesto" : "Secretaria",
+            "edad" : 25,
+            "salario" : 1200
+        },
+        {
+            "id" : 3,
+            "nombre" : "Pedro",
+            "apellido" : "Gonzalez",
+            "puesto" : "Contador",
+            "edad" : 35,
+            "salario" : 1500
+        }
+    ]
+}
